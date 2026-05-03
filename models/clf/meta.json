@@ -1,0 +1,248 @@
+{
+  "task": "classification",
+  "target_name": "good",
+  "classes": [
+    "nu (quality<6)",
+    "da (quality>=6)"
+  ],
+  "features": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ],
+  "feature_info": {
+    "fixed acidity": {
+      "min": 4.6,
+      "max": 15.9,
+      "mean": 8.31963727329581,
+      "std": 1.7410963181276953,
+      "median": 7.9
+    },
+    "volatile acidity": {
+      "min": 0.12,
+      "max": 1.58,
+      "mean": 0.5278205128205128,
+      "std": 0.17905970415353537,
+      "median": 0.52
+    },
+    "citric acid": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2709756097560976,
+      "std": 0.19480113740531857,
+      "median": 0.26
+    },
+    "residual sugar": {
+      "min": 0.9,
+      "max": 15.5,
+      "mean": 2.53880550343965,
+      "std": 1.4099280595072798,
+      "median": 2.2
+    },
+    "chlorides": {
+      "min": 0.012,
+      "max": 0.611,
+      "mean": 0.08746654158849279,
+      "std": 0.0470653020100901,
+      "median": 0.079
+    },
+    "free sulfur dioxide": {
+      "min": 1.0,
+      "max": 72.0,
+      "mean": 15.874921826141339,
+      "std": 10.460156969809725,
+      "median": 14.0
+    },
+    "total sulfur dioxide": {
+      "min": 6.0,
+      "max": 289.0,
+      "mean": 46.46779237023139,
+      "std": 32.895324478299074,
+      "median": 38.0
+    },
+    "density": {
+      "min": 0.99007,
+      "max": 1.00369,
+      "mean": 0.9967466791744841,
+      "std": 0.0018873339538425554,
+      "median": 0.99675
+    },
+    "pH": {
+      "min": 2.74,
+      "max": 4.01,
+      "mean": 3.3111131957473416,
+      "std": 0.15438646490354277,
+      "median": 3.31
+    },
+    "sulphates": {
+      "min": 0.33,
+      "max": 2.0,
+      "mean": 0.6581488430268917,
+      "std": 0.16950697959010996,
+      "median": 0.62
+    },
+    "alcohol": {
+      "min": 8.4,
+      "max": 14.9,
+      "mean": 10.422983114446529,
+      "std": 1.0656675818473946,
+      "median": 10.2
+    }
+  },
+  "top5": [
+    "XGBoost",
+    "CatBoost",
+    "EBM",
+    "RandomForest",
+    "SVM"
+  ],
+  "top3_shap": [
+    "XGBoost",
+    "EBM",
+    "RandomForest"
+  ],
+  "best_model": "XGBoost",
+  "baseline_results": {
+    "NaiveBayes": {
+      "accuracy": 0.73,
+      "precision": 0.7731958762886598,
+      "recall": 0.7009345794392523,
+      "f1": 0.7352941176470589,
+      "roc_auc": 0.7961260174856799
+    },
+    "LogReg": {
+      "accuracy": 0.735,
+      "precision": 0.7547169811320755,
+      "recall": 0.7476635514018691,
+      "f1": 0.7511737089201878,
+      "roc_auc": 0.828534820621043
+    },
+    "DecisionTree": {
+      "accuracy": 0.735,
+      "precision": 0.7410714285714286,
+      "recall": 0.7757009345794392,
+      "f1": 0.7579908675799086,
+      "roc_auc": 0.731936488795096
+    },
+    "RandomForest": {
+      "accuracy": 0.7825,
+      "precision": 0.7953488372093023,
+      "recall": 0.7990654205607477,
+      "f1": 0.7972027972027972,
+      "roc_auc": 0.8881770676313939
+    },
+    "SVM": {
+      "accuracy": 0.755,
+      "precision": 0.7871287128712872,
+      "recall": 0.7429906542056075,
+      "f1": 0.7644230769230769,
+      "roc_auc": 0.8390865239674404
+    },
+    "KNN": {
+      "accuracy": 0.7425,
+      "precision": 0.751131221719457,
+      "recall": 0.7757009345794392,
+      "f1": 0.7632183908045977,
+      "roc_auc": 0.8072304291026027
+    },
+    "XGBoost": {
+      "accuracy": 0.7975,
+      "precision": 0.812206572769953,
+      "recall": 0.8084112149532711,
+      "f1": 0.810304449648712,
+      "roc_auc": 0.8751381770676314
+    },
+    "CatBoost": {
+      "accuracy": 0.7925,
+      "precision": 0.8133971291866029,
+      "recall": 0.794392523364486,
+      "f1": 0.8037825059101655,
+      "roc_auc": 0.8735805446688776
+    },
+    "EBM": {
+      "accuracy": 0.7875,
+      "precision": 0.8056872037914692,
+      "recall": 0.794392523364486,
+      "f1": 0.8,
+      "roc_auc": 0.8550145713998593
+    }
+  },
+  "tuned_results": {
+    "XGBoost": {
+      "accuracy": 0.7975,
+      "precision": 0.812206572769953,
+      "recall": 0.8084112149532711,
+      "f1": 0.810304449648712,
+      "roc_auc": 0.8662445985328108
+    },
+    "CatBoost": {
+      "accuracy": 0.7775,
+      "precision": 0.7990430622009569,
+      "recall": 0.780373831775701,
+      "f1": 0.789598108747045,
+      "roc_auc": 0.8646115968244398
+    },
+    "EBM": {
+      "accuracy": 0.795,
+      "precision": 0.8142857142857143,
+      "recall": 0.7990654205607477,
+      "f1": 0.8066037735849056,
+      "roc_auc": 0.8537835393427797
+    },
+    "RandomForest": {
+      "accuracy": 0.79,
+      "precision": 0.8009259259259259,
+      "recall": 0.8084112149532711,
+      "f1": 0.8046511627906977,
+      "roc_auc": 0.879559843231836
+    },
+    "SVM": {
+      "accuracy": 0.755,
+      "precision": 0.7871287128712872,
+      "recall": 0.7429906542056075,
+      "f1": 0.7644230769230769,
+      "roc_auc": 0.8390865239674404
+    }
+  },
+  "tuned_params": {
+    "XGBoost": {
+      "model__learning_rate": 0.05,
+      "model__max_depth": 5,
+      "model__n_estimators": 200
+    },
+    "CatBoost": {
+      "model__depth": 6,
+      "model__iterations": 200,
+      "model__learning_rate": 0.05
+    },
+    "EBM": {
+      "model__interactions": 10,
+      "model__max_bins": 128
+    },
+    "RandomForest": {
+      "model__max_depth": 10,
+      "model__n_estimators": 400
+    },
+    "SVM": {
+      "model__C": 1.0,
+      "model__gamma": "scale"
+    }
+  },
+  "dataset_info": {
+    "name": "Wine Quality Red (UCI)",
+    "n_rows": 1599,
+    "n_features": 11,
+    "class_balance": {
+      "good=1": 855,
+      "good=0": 744
+    }
+  }
+}

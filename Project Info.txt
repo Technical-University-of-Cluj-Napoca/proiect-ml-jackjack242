@@ -1,0 +1,13 @@
+Proiect 1 - Machine Learning
+Salutare!
+ 
+Saptamana trecuta (sau saptamana aceasta pentru unii), am terminat prima parte din Sisteme inteligente, si anume partea de machine learning, si ass cum v-am spus la inca de la inceput, vom avea un proiect la finalul fiecarui capitol mare. Astfel, va atasez mai jos subiectul proiectului 1: "Analiza comparată a modelelor de machine learning, în regresie și clasificare". Acest proiect, inglobeaza tot ce am facut pana acum, dar merge si putin extra, facandu-l un proiect practic formidabil pentru consolidarea algoritmilor de ML si pentru imprastierea nebuloasei care s-a adunat probabil pana acum cu privire la materie.
+ 
+Pe scurt, sper sa va placa chiar daca la inceput will seems like a lot.
+Deadline: 03.05.2026, deci 2 saptamani incepand de acum!
+ 
+Instructiuni preliminare:
+clonati acest repository (https://classroom.github.com/a/G_YtOrWk) local, si adaugati in el munca voastra.
+alegeti 2 dataset-uri: unul pentru o problema de clasificare si altul pentru o problema de regresie.
+Kaggle, github sau internet-ul in general poate fi sursa voastra de inspiratie.
+GratGPT, Claude si Gemini, pot crea seturi de date sintetice, fictive dar plauzibile, pentru diverse probleme care va trec prin minte - cum ar fi predictia pretului la motorina. Folositi aceasta informatie cu grija:). Sa fie totusi un set de date consistent, cu intre 1500 si 2000 de observatii.
